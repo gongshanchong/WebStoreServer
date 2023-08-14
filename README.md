@@ -40,7 +40,7 @@
 3. 功能展示：
 
    1. 注册
-      ![](./testImages/register.gif)
+      ![注册](./testImages/register.gif)
    3. 登录
    4. 文件预览
    5. 文件预览、文件下载、文件删除
