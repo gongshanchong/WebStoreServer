@@ -23,6 +23,7 @@
 ## 整体框架
 
 ![整体框架](./testImages/framework.png)
+![HttpConn](./testImages/httpConn.png)
 
 ## 环境要求
 
