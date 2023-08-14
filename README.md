@@ -41,9 +41,13 @@
 
    1. 注册
       ![注册](./testImages/register.gif)
-   3. 登录
-   4. 文件预览
-   5. 文件预览、文件下载、文件删除
+   2. 登录
+      ![登录](./testImages/log.gif)
+   3. 文件预览
+      ![文件预览](./testImages/preview.gif)
+   4. 文件预览、文件下载、文件删除
+      ![下载/删除](./testImages/download:delete1.gif)
+      ![下载/删除](./testImages/download:delete2.gif)
 
 ## 致谢
 
