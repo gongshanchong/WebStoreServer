@@ -501,6 +501,7 @@ private:
         return NO_REQUEST;
     }
 
+    // 如果sql中定义的类型是int型的可以不用加引号，但是如果是字符串类型的，必须加引号
     HTTP_CODE parseFormContent(std::string &text, Response &httpResponse){
         //先从连接池中取一个连接
         MYSQL *mysql = NULL;
@@ -520,9 +521,9 @@ private:
         // 同步线程登录校验
         if(rquestResourse.find("log") != std::string::npos){
             sql = "SELECT username, passwd FROM user WHERE username = ";
-            sql += userName;
+            sql += "'" + userName + "'";
             sql += " AND passwd = ";
-            sql += userPassword;
+            sql += "'" +  userPassword + "'";
 
             // 如果查询成功，返回0。如果出现错误，返回非0值
             int res = mysql_query(mysql, sql.c_str());
@@ -544,7 +545,7 @@ private:
             //如果是注册，先检测数据库中是否有重名的
             //没有重名的，进行增加数据
             sql = "SELECT username FROM user WHERE username = ";
-            sql += userName;
+            sql += "'" + userName + "'";
 
             // 如果查询成功，返回0。如果出现错误，返回非0值
             int res = mysql_query(mysql, sql.c_str());
