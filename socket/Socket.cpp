@@ -31,6 +31,8 @@ void Socket::bind(uint16_t port, const char *ip){
     if(ip != nullptr){
         tempAddr.sin_addr.s_addr = inet_addr(ip);
     }else{
+        // INADDR_ANY表示的是一个服务器上所有的网卡（服务器可能不止一个网卡）多个本地ip地址都进行绑定端口号，进行侦听
+        // 就是指定地址为0.0.0.0的地址,这个地址事实上表示不确定地址,或“所有地址”、“任意地址”
         tempAddr.sin_addr.s_addr = htonl(INADDR_ANY);
     }
 
