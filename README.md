@@ -30,25 +30,28 @@
 本项目使用了智能指针，如std::make_unique，还有其他一些C++新特性，本项目的环境部署在阿里云，使用版本如下：
 
 1. 服务端环境：
+
    * C++17及以上
    * mysql  Ver 8.0.34 for Linux on x86_64
    * CentOS Linux release 7.9.2009 (Core)
 2. 浏览器（目前测试过的）：
+
    * Windows、Mac
    * Edge、Chrome、Safari
 3. 已安装MySQL数据库并创建表格:
-   // 建立yourdb库
-   create database yourdb;
 
-   // 创建user表
-   USE yourdb;
-   CREATE TABLE user(
-      username char(50) NULL,
-      passwd char(50) NULL
-   )ENGINE=InnoDB;
-
-   // 添加数据
-   INSERT INTO user(username, passwd) VALUES('name', 'passwd');
+```
+// 建立yourdb库
+create database yourdb;
+// 创建user表
+USE yourdb;
+CREATE TABLE user(
+username char(50) NULL,
+passwd char(50) NULL
+)ENGINE=InnoDB;
+// 添加数据
+INSERT INTO user(username, passwd) VALUES('name', 'passwd');
+```
 
 ## 使用及功能展示
 
