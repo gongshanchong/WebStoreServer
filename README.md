@@ -22,10 +22,9 @@
 
 ## 整体框架
 
-![1695372761203](image/README/1695372761203.png)
+![framework](testImages/framework.png)
 
-![1695372768704](image/README/1695372768704.png)
-
+![httpConn](testImages/httpConn.png)
 
 ## 环境要求
 
