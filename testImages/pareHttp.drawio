@@ -1,217 +1,217 @@
 <mxfile host="65bd71144e">
     <diagram id="4PYJDAInXsO8ymXNQWgw" name="第 1 页">
-        <mxGraphModel dx="1009" dy="697" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1066" dy="617" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                <mxCell id="2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="20" y="40" width="790" height="280" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="processRead" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                <mxCell id="3" value="processRead" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="40" y="50" width="70" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;CHECK_STATE_REQUESTLINE&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                <mxCell id="4" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;CHECK_STATE_REQUESTLINE&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="40" y="80" width="160" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;CHECK_STATE_HEADER&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                <mxCell id="5" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;CHECK_STATE_HEADER&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="280" y="80" width="160" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;CHECK_STATE_CONTENT&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                <mxCell id="6" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;CHECK_STATE_CONTENT&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="520" y="80" width="160" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="7" value="parseRequestLine" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fillColor=none;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                <mxCell id="7" value="parseRequestLine" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="120" y="160" width="120" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="parseHeaders" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fillColor=none;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                <mxCell id="8" value="parseHeaders" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="440" y="160" width="120" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="9" value="parseContent" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fillColor=none;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                <mxCell id="9" value="parseContent" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="680" y="160" width="120" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" value="解析请求行" style="endArrow=classic;html=1;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="4" target="7">
+                <mxCell id="10" value="解析请求行" style="endArrow=classic;html=1;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;rounded=0;" parent="1" source="4" target="7" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="320" y="180" as="sourcePoint"/>
                         <mxPoint x="370" y="130" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="11" value="" style="endArrow=classic;html=1;fontSize=10;entryX=0.5;entryY=1;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" target="5">
+                <mxCell id="11" value="" style="endArrow=classic;html=1;fontSize=10;entryX=0.5;entryY=1;entryDx=0;entryDy=0;rounded=0;" parent="1" target="5" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="180" y="160" as="sourcePoint"/>
                         <mxPoint x="370" y="130" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="12" value="解析完成" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;sketch=1;curveFitting=1;jiggle=2;" vertex="1" connectable="0" parent="11">
+                <mxCell id="12" value="解析完成" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;rounded=0;" parent="11" vertex="1" connectable="0">
                     <mxGeometry x="0.0797" relative="1" as="geometry">
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="13" value="BAD_REQUEST" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fillColor=none;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                <mxCell id="13" value="BAD_REQUEST" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="120" y="240" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="14" value="解析错误" style="endArrow=classic;html=1;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="7" target="13">
+                <mxCell id="14" value="解析错误" style="endArrow=classic;html=1;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;rounded=0;" parent="1" source="7" target="13" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="130" y="130" as="sourcePoint"/>
                         <mxPoint x="190" y="170" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="15" value="解析请求头" style="endArrow=classic;html=1;fontSize=10;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="5" target="8">
+                <mxCell id="15" value="解析请求头" style="endArrow=classic;html=1;fontSize=10;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;rounded=0;" parent="1" source="5" target="8" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="360" y="120" as="sourcePoint"/>
                         <mxPoint x="200" y="180" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="16" value="" style="endArrow=classic;html=1;fontSize=10;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="8" target="6">
+                <mxCell id="16" value="" style="endArrow=classic;html=1;fontSize=10;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;rounded=0;" parent="1" source="8" target="6" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="190" y="170" as="sourcePoint"/>
                         <mxPoint x="370" y="130" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="17" value="解析完成（POST）" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;sketch=1;curveFitting=1;jiggle=2;" vertex="1" connectable="0" parent="16">
+                <mxCell id="17" value="解析完成（POST）" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;rounded=0;" parent="16" vertex="1" connectable="0">
                     <mxGeometry x="0.0797" relative="1" as="geometry">
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="18" value="解析请求主体" style="endArrow=classic;html=1;fontSize=10;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="6" target="9">
+                <mxCell id="18" value="解析请求主体" style="endArrow=classic;html=1;fontSize=10;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;rounded=0;" parent="1" source="6" target="9" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="370" y="130" as="sourcePoint"/>
                         <mxPoint x="510" y="170" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="19" value="GET_REQUEST" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fillColor=none;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                <mxCell id="19" value="GET_REQUEST" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="280" y="240" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="20" value="" style="endArrow=classic;html=1;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="8" target="19">
+                <mxCell id="20" value="" style="endArrow=classic;html=1;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;rounded=0;" parent="1" source="8" target="19" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="190" y="170" as="sourcePoint"/>
                         <mxPoint x="370" y="130" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="21" value="解析完成（GET）" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;sketch=1;curveFitting=1;jiggle=2;" vertex="1" connectable="0" parent="20">
+                <mxCell id="21" value="解析完成（GET）" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;rounded=0;" parent="20" vertex="1" connectable="0">
                     <mxGeometry x="0.0797" relative="1" as="geometry">
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="22" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=10;fillColor=none;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                <mxCell id="22" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="280" y="340" width="530" height="170" as="geometry"/>
                 </mxCell>
-                <mxCell id="24" value="" style="endArrow=classic;html=1;fontSize=10;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="9" target="19">
+                <mxCell id="24" value="" style="endArrow=classic;html=1;fontSize=10;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;rounded=0;" parent="1" source="9" target="19" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="510" y="200" as="sourcePoint"/>
                         <mxPoint x="500" y="240" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="25" value="解析完成（表单数据）" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;sketch=1;curveFitting=1;jiggle=2;" vertex="1" connectable="0" parent="24">
+                <mxCell id="25" value="解析完成（表单数据）" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;rounded=0;" parent="24" vertex="1" connectable="0">
                     <mxGeometry x="0.0797" relative="1" as="geometry">
                         <mxPoint x="37" y="-7" as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="26" value="" style="endArrow=classic;html=1;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.872;entryY=-0.023;entryDx=0;entryDy=0;entryPerimeter=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="9" target="22">
+                <mxCell id="26" value="" style="endArrow=classic;html=1;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.872;entryY=-0.023;entryDx=0;entryDy=0;entryPerimeter=0;rounded=0;" parent="1" source="9" target="22" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="730" y="187.21" as="sourcePoint"/>
                         <mxPoint x="740" y="330" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="27" value="解析文件数据" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;sketch=1;curveFitting=1;jiggle=2;" vertex="1" connectable="0" parent="26">
+                <mxCell id="27" value="解析文件数据" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;rounded=0;" parent="26" vertex="1" connectable="0">
                     <mxGeometry x="0.0797" relative="1" as="geometry">
                         <mxPoint x="-1" y="-31" as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="28" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;CHECK_STATE_FILE_BEGIN&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                <mxCell id="28" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;CHECK_STATE_FILE_BEGIN&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="640" y="430" width="160" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="29" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;CHECK_STATE_FILE_HEAD&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                <mxCell id="29" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;CHECK_STATE_FILE_HEAD&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="465" y="430" width="160" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="30" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;CHECK_STATE_FILE_CONTENT&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                <mxCell id="30" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;CHECK_STATE_FILE_CONTENT&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="290" y="430" width="160" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="31" value="解析文件开始边界" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fillColor=none;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                <mxCell id="31" value="解析文件开始边界" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="600" y="370" width="120" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="32" value="解析文件头部信息" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fillColor=none;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                <mxCell id="32" value="解析文件头部信息" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="440" y="370" width="120" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="34" value="获取文件数据" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fillColor=none;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                <mxCell id="34" value="获取文件数据" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="294" y="370" width="120" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="35" value="" style="endArrow=classic;html=1;fontSize=10;entryX=0.454;entryY=1.071;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="28" target="31">
+                <mxCell id="35" value="" style="endArrow=classic;html=1;fontSize=10;entryX=0.454;entryY=1.071;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;rounded=0;" parent="1" source="28" target="31" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="410" y="460" as="sourcePoint"/>
                         <mxPoint x="460" y="410" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="36" value="" style="endArrow=classic;html=1;fontSize=10;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="31" target="29">
+                <mxCell id="36" value="" style="endArrow=classic;html=1;fontSize=10;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;rounded=0;" parent="1" source="31" target="29" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="730" y="440" as="sourcePoint"/>
                         <mxPoint x="664.48" y="412.1300000000001" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="37" value="" style="endArrow=classic;html=1;fontSize=10;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="29" target="32">
+                <mxCell id="37" value="" style="endArrow=classic;html=1;fontSize=10;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;rounded=0;" parent="1" source="29" target="32" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="670" y="410" as="sourcePoint"/>
                         <mxPoint x="555" y="440" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="38" value="" style="endArrow=classic;html=1;fontSize=10;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.555;exitY=1.071;exitDx=0;exitDy=0;exitPerimeter=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="32" target="30">
+                <mxCell id="38" value="" style="endArrow=classic;html=1;fontSize=10;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.555;exitY=1.071;exitDx=0;exitDy=0;exitPerimeter=0;rounded=0;" parent="1" source="32" target="30" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="555" y="440" as="sourcePoint"/>
                         <mxPoint x="510" y="410" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="39" value="" style="endArrow=classic;html=1;fontSize=10;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="30" target="34">
+                <mxCell id="39" value="" style="endArrow=classic;html=1;fontSize=10;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;rounded=0;" parent="1" source="30" target="34" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="516.5999999999999" y="412.1300000000001" as="sourcePoint"/>
                         <mxPoint x="380" y="440" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="40" value="" style="endArrow=classic;html=1;fontSize=10;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="34" target="19">
+                <mxCell id="40" value="" style="endArrow=classic;html=1;fontSize=10;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;rounded=0;" parent="1" source="34" target="19" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="345" y="370" as="sourcePoint"/>
                         <mxPoint x="335" y="280" as="targetPoint"/>
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="41" value="解析完成（文件数据）" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;sketch=1;curveFitting=1;jiggle=2;" vertex="1" connectable="0" parent="40">
+                <mxCell id="41" value="解析完成（文件数据）" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;rounded=0;" parent="40" vertex="1" connectable="0">
                     <mxGeometry x="0.0797" relative="1" as="geometry">
                         <mxPoint x="26" y="-21" as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="42" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                <mxCell id="42" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="19" y="530" width="481" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="43" value="processWrite" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                <mxCell id="43" value="processWrite" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="40" y="540" width="70" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="44" value="" style="endArrow=classic;html=1;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="13" target="42">
+                <mxCell id="44" value="" style="endArrow=classic;html=1;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;rounded=0;" parent="1" source="13" target="42" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="410" y="500" as="sourcePoint"/>
                         <mxPoint x="460" y="450" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="46" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;依据processRead的返回值构造响应报文&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;sketch=1;curveFitting=1;jiggle=2;" vertex="1" connectable="0" parent="44">
+                <mxCell id="46" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;依据processRead的返回值构造响应报文&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;rounded=0;" parent="44" vertex="1" connectable="0">
                     <mxGeometry x="-0.1484" relative="1" as="geometry">
                         <mxPoint x="1" y="84" as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="45" value="" style="endArrow=classic;html=1;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="19" target="42">
+                <mxCell id="45" value="" style="endArrow=classic;html=1;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;rounded=0;" parent="1" source="19" target="42" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="190" y="290" as="sourcePoint"/>
                         <mxPoint x="164.24999999999955" y="540" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="47" value="添加响应正文" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fillColor=none;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                <mxCell id="47" value="添加响应正文" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="346" y="570" width="120" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="51" value="" style="edgeStyle=none;html=1;fontSize=12;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="48" target="47">
+                <mxCell id="51" value="" style="edgeStyle=none;html=1;fontSize=12;rounded=0;" parent="1" source="48" target="47" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="48" value="添加信息报头" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fillColor=none;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                <mxCell id="48" value="添加信息报头" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="186" y="570" width="120" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="50" value="" style="edgeStyle=none;html=1;fontSize=12;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="49" target="48">
+                <mxCell id="50" value="" style="edgeStyle=none;html=1;fontSize=12;rounded=0;" parent="1" source="49" target="48" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="49" value="添加状态行" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fillColor=none;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                <mxCell id="49" value="添加状态行" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="40" y="570" width="120" height="30" as="geometry"/>
                 </mxCell>
             </root>
