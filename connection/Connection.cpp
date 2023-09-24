@@ -148,11 +148,11 @@ void Connection::readNonBlocking(){
             break;
         // EOF，客户端断开连接
         } else if (bytes_read == 0) {  
-            LOG_INFO("%s", "read EOF, client fd "+ std::to_string(sockFd) +" disconnected");
+            LOG_INFO("%s", ("read EOF, client fd "+ std::to_string(sockFd) +" disconnected").c_str());
             stateConn = State::Closed;
             break;
         } else {
-            LOG_INFO("%s", "Other error on client fd " + std::to_string(sockFd));
+            LOG_INFO("%s", ("Other error on client fd " + std::to_string(sockFd)).c_str());
             stateConn = State::Closed;
             break;
         }
@@ -180,7 +180,7 @@ void Connection::writeNonBlocking(){
             continue;
         }
         if (bytes_write == -1) {
-            LOG_INFO("%s", "Other error on client fd " + std::to_string(sockFd));
+            LOG_INFO("%s", ("Other error on client fd " + std::to_string(sockFd)).c_str());
             stateConn = State::Closed;
             break;
         }
@@ -195,10 +195,10 @@ void Connection::readBlocking(){
     if (bytes_read > 0) {
         readBuf->append(buf, bytes_read);
     } else if (bytes_read == 0) {
-        LOG_INFO("%s", "read EOF, blocking client fd "+ std::to_string(sockFd) +" disconnected");
+        LOG_INFO("%s", ("read EOF, blocking client fd "+ std::to_string(sockFd) +" disconnected").c_str());
         stateConn = State::Closed;
     } else if (bytes_read == -1) {
-        LOG_INFO("%s", "Other error on client fd " + std::to_string(sockFd));
+        LOG_INFO("%s", ("Other error on client fd " + std::to_string(sockFd)).c_str());
         stateConn = State::Closed;
     }
 }
@@ -208,7 +208,7 @@ void Connection::writeBlocking(){
     // 没有处理send_buffer_数据大于TCP写缓冲区，的情况，可能会有bug
     ssize_t bytes_write = write(sockFd, sendBuf->cStr(), sendBuf->size());
     if (bytes_write == -1) {
-        LOG_INFO("%s", "Other error on client fd " + std::to_string(sockFd));
+        LOG_INFO("%s", ("Other error on client fd " + std::to_string(sockFd)).c_str());
         stateConn = State::Closed;
     }
 }
