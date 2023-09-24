@@ -22,7 +22,7 @@ public:
     // void add(std::function<void()>);
     template<class F, class... Args>
     auto add(F&& f, Args&&... args) 
-    -> std::future<typename std::invoke_result<F, Args...>::type>;
+    -> std::future<typename std::__invoke_result<F, Args...>::type>;
 
 };
 
@@ -30,9 +30,9 @@ public:
 //不能放在cpp文件，C++编译器不支持模版的分离编译
 // 使用add函数前不需要手动绑定参数，而是直接传递，并且可以得到任务的返回值
 template<class F, class... Args>
-auto ThreadPool::add(F&& f, Args&&... args) -> std::future<typename std::invoke_result<F, Args...>::type>{
+auto ThreadPool::add(F&& f, Args&&... args) -> std::future<typename std::__invoke_result<F, Args...>::type>{
     // 返回值类型
-    using return_type = typename std::invoke_result<F, Args...>::type;
+    using return_type = typename std::__invoke_result<F, Args...>::type;
 
     // 使用智能指针
     // 完美转发参数
