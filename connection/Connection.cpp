@@ -176,7 +176,7 @@ void Connection::writeNonBlocking(){
         }
         // 非阻塞的系统调用，由于资源限制/不满足条件，导致返回值为EAGAIN
         if (bytes_write == -1 && errno == EAGAIN) {
-            sleep(0.5);
+            sleep(1);
             continue;
         }
         if (bytes_write == -1) {
