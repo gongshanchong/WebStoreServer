@@ -80,7 +80,7 @@ void TcpServer::deleteConnection(int sockfd,  std::string sockaddr){
 
     auto it = connections.find(sockfd);
     // 如果是超时前关闭，则将定时器容器中定时器设置为无效
-    if(! it->second->getTimerNode()->getDeleted()) 
+    if(!it->second->getTimerNode()->getDeleted()) 
         it->second->getTimerNode()->setDeleted();
     // 日志输出
     else
