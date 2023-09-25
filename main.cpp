@@ -4,7 +4,7 @@ int main() {
   // 参数
   // 服务器端口
   uint16_t port = 80;
-  const char *ip = nullptr;
+  const char *ip_add = nullptr;
   // 数据库相关
   std::string mysqlUrl = "localhost";			        // 主机地址
   std::string mysqlUser = "root";		            // 登陆数据库用户名
@@ -17,7 +17,7 @@ int main() {
   int maxLines = 5000000;                                 // 日志
 
   // 服务端初始化
-  std::unique_ptr<StoreServer> storeserver = std::make_unique<StoreServer>(port, ip, mysqlUrl, mysqlUser, mysqlPassWord, databaseName, mysqlPort, mSqlNum, logFileName, maxLines);
+  std::unique_ptr<StoreServer> storeserver = std::make_unique<StoreServer>(port, ip_add, mysqlUrl, mysqlUser, mysqlPassWord, databaseName, mysqlPort, mSqlNum, logFileName, maxLines);
 
   storeserver->Start();
 
