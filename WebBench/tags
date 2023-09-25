@@ -4,12 +4,12 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-METHOD_GET	webbench.c	35;"	d	file:
-METHOD_HEAD	webbench.c	36;"	d	file:
-METHOD_OPTIONS	webbench.c	37;"	d	file:
-METHOD_TRACE	webbench.c	38;"	d	file:
-PROGRAM_VERSION	webbench.c	39;"	d	file:
-REQUEST_SIZE	webbench.c	50;"	d	file:
+METHOD_GET	webbench.c	38;"	d	file:
+METHOD_HEAD	webbench.c	39;"	d	file:
+METHOD_OPTIONS	webbench.c	40;"	d	file:
+METHOD_TRACE	webbench.c	41;"	d	file:
+PROGRAM_VERSION	webbench.c	42;"	d	file:
+REQUEST_SIZE	webbench.c	56;"	d	file:
 Socket	socket.c	/^int Socket(const char *host, int clientPort)$/;"	f
 alarm_handler	webbench.c	/^static void alarm_handler(int signal)$/;"	f	file:
 bench	webbench.c	/^static int bench(void)$/;"	f	file:
@@ -23,6 +23,7 @@ force	webbench.c	/^int force=0;$/;"	v
 force_reload	webbench.c	/^int force_reload=0;$/;"	v
 host	webbench.c	/^char host[MAXHOSTNAMELEN];$/;"	v
 http10	webbench.c	/^int http10=1; \/* 0 - http\/0.9, 1 - http\/1.0, 2 - http\/1.1 *\/$/;"	v
+keep_alive	webbench.c	/^bool keep_alive = false;$/;"	v
 long_options	webbench.c	/^static const struct option long_options[]=$/;"	v	typeref:struct:option	file:
 main	webbench.c	/^int main(int argc, char *argv[])$/;"	f
 method	webbench.c	/^int method=METHOD_GET;$/;"	v

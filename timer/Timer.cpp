@@ -48,7 +48,7 @@ void TimerQueue::handleExpiredEvent(){
         sptTimerNode ptimerNow = timerNodeQueue.top();
 
         if ((ptimerNow->getDeleted() == true) || (ptimerNow->isValid() == false)){
-            ptimerNow->timeoutCallBack(ptimerNow->getFd(), ptimerNow->getAddr());
+            // ptimerNow->timeoutCallBack(ptimerNow->getFd(), ptimerNow->getAddr());
             timerNodeQueue.pop();
         }
         else
