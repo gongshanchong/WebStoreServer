@@ -394,3 +394,46 @@ Connection: keep-alive
 2023-09-25 16:11:53.461707 [info]: send data to the client(183.238.250.146:57156 fd of 18)
 2023-09-25 16:11:53.461710 [info]: update timer once
 
+2023-09-25 16:21:32.999583 [info]: New connection client(183.238.250.146:57435 fd of 18)
+2023-09-25 16:21:32.999909 [info]: New connection client(183.238.250.146:57436 fd of 19)
+2023-09-25 16:21:33.006432 [info]: read data from the client(183.238.250.146:57436 fd of 19)
+2023-09-25 16:21:33.006457 [info]: update timer once
+
+2023-09-25 16:21:33.006500 [info]: GET / HTTP/1.1
+2023-09-25 16:21:33.006519 [info]: Host: 1.12.69.62
+2023-09-25 16:21:33.006527 [info]: Connection: keep-alive
+2023-09-25 16:21:33.006531 [info]: Upgrade-Insecure-Requests: 1
+2023-09-25 16:21:33.006540 [info]: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.36
+2023-09-25 16:21:33.006546 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2023-09-25 16:21:33.006554 [info]: Accept-Encoding: gzip, deflate
+2023-09-25 16:21:33.006558 [info]: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2023-09-25 16:21:33.006618 [info]: request:HTTP/1.1 200 OK
+Content-Length: 598
+Content-Type: text/html;charset=UTF-8
+Connection: keep-alive
+
+
+2023-09-25 16:21:33.006627 [info]: send data to the client(183.238.250.146:57436 fd of 19)
+2023-09-25 16:21:33.006634 [info]: update timer once
+
+2023-09-25 16:21:33.006671 [info]: update timer once
+
+2023-09-25 16:21:40.190114 [info]: New connection client(1.12.69.62:48024 fd of 20)
+2023-09-25 16:21:40.190134 [info]: read data from the client(1.12.69.62:48024 fd of 20)
+2023-09-25 16:21:40.190161 [info]: update timer once
+
+2023-09-25 16:21:40.190185 [info]: GET / HTTP/1.1
+2023-09-25 16:21:40.190199 [info]: Host: 1.12.69.62
+2023-09-25 16:21:40.190209 [info]: User-Agent: curl/7.81.0
+2023-09-25 16:21:40.190220 [info]: Accept: */*
+2023-09-25 16:21:40.190261 [info]: request:HTTP/1.1 200 OK
+Content-Length: 598
+Content-Type: text/html;charset=UTF-8
+Connection: close
+
+
+2023-09-25 16:21:40.190272 [info]: send data to the client(1.12.69.62:48024 fd of 20)
+2023-09-25 16:21:40.190292 [info]: update timer once
+
+2023-09-25 16:21:40.190315 [info]: update timer once
+
