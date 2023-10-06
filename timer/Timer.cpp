@@ -1,4 +1,6 @@
 #include "Timer.h"
+#include <cstddef>
+#include <cstdio>
 
 TimerNode::TimerNode(int _fd, std::string _sockaddr, int timeout){
     sockfd = _fd;

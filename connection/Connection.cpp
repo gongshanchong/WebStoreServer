@@ -1,4 +1,5 @@
 #include "Connection.h"
+#include <string>
 
 Connection::Connection(EventLoop *_loop, int _sockfd, sockaddr_in _addr){
     sock = std::make_unique<Socket>(_sockfd, _addr);
@@ -60,6 +61,15 @@ Buffer* Connection::getSendBuf(){
 }
 
 void Connection::handleConn(){
+    if(timerNode == nullptr){
+        LOG_INFO("http of %s stop because of timeout", (sock->getAddr() + " fd of " + std::to_string(sock->getFd())).c_str());
+        return;
+    }
+    // 此处更新时间
+    // 每次操作后添加15秒
+    timerNode->update(3 * DEFAULT_EXPIRED_TIME);
+    LOG_INFO("%s", ("update timer " + std::to_string(3 * DEFAULT_SENCOND_TIME) + " second before handle\r\n").c_str());
+
     // 读取数据
     this->readConn();
 
@@ -69,10 +79,6 @@ void Connection::handleConn(){
     // 发送数据
     this->writeConn();
     
-    // 此处更新时间
-    // 每次操作后添加5秒
-    this->getTimerNode()->update(DEFAULT_EXPIRED_TIME);
-    LOG_INFO("%s", "update timer once\r\n");
     Log::getInstance()->flush();
 }
 
@@ -88,11 +94,7 @@ void Connection::readConn(){
     } else {
         this->readBlocking();
     }
-    
     LOG_INFO("read data from the client(%s)", (sockAddr + " fd of " + std::to_string(sockFd)).c_str());
-    // 此处依据接收的文件大小更新时间
-    this->getTimerNode()->update((readBuf->size()/1024/100) * DEFAULT_SENCOND_TIME);
-    LOG_INFO("%s", "update timer once\r\n");
 }
 
 void Connection::writeConn(){
@@ -104,8 +106,8 @@ void Connection::writeConn(){
     LOG_INFO("send data to the client(%s)", (sockAddr + " fd of " + std::to_string(sockFd)).c_str());
 
     // 此处依据发送的文件大小更新时间
-    this->getTimerNode()->update((len/1024/100) * DEFAULT_SENCOND_TIME);
-    LOG_INFO("%s", "update timer once\r\n");
+    timerNode->update((len/1024/100) * DEFAULT_SENCOND_TIME);
+    LOG_INFO("%s", ("update timer " + std::to_string((len/1024/100) * DEFAULT_SENCOND_TIME) + " second before write\r\n").c_str());
     
     if (IsNonBlocking(sockFd)) {
         this->writeNonBlocking();
