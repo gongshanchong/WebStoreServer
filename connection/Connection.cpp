@@ -73,7 +73,7 @@ void Connection::handleConn(){
     
     // 此处更新时间
     // 每次操作后添加30秒
-    this->getTimerNode()->update(6 * DEFAULT_EXPIRED_TIME);
+    this->getTimerNode()->update(DEFAULT_EXPIRED_TIME);
     LOG_INFO("%s", "update timer once\r\n");
     Log::getInstance()->flush();
 }

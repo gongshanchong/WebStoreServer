@@ -77,5 +77,4 @@ void Poller::modEpoll(Channel *ch){
 void Poller::delEpoll(Channel *ch){
     int fd = ch->getFd();
     errif(epoll_ctl(epfd, EPOLL_CTL_DEL, fd, NULL) == -1, "epoll delete error");
-    close(fd);
 }
