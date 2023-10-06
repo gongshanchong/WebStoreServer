@@ -1,9 +1,5 @@
 #include "Buffer.h"
 
-Buffer::Buffer() {}
-
-Buffer::~Buffer() {}
-
 // 由于在处理文件时，里面可能有 \0，所以使用append将所有字符保存到缓冲区
 void Buffer::append(const char* _str, int _size){
     buf.append(_str, _size);

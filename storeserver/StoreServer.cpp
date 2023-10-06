@@ -11,8 +11,6 @@ StoreServer::StoreServer(uint16_t port, const char *ip, std::string _url, std::s
     MysqlConnPool::getInstance()->init(_url, _user, _passWord, _databasename, _port, _maxConn);
 }
 
-StoreServer::~StoreServer(){}
-
 // 自定义业务逻辑，设置回调函数
 // 在进入该函数前，服务器已经完成了接受客户端数据并保存在读缓冲区里，
 // 业务逻辑只需要将读缓冲区里的数据发送回即可，这样的设计更加符合服务器的功能准则与设计准则

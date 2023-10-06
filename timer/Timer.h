@@ -27,7 +27,6 @@ private:
 
 public:
     TimerNode(int _fd, std::string _sockaddr, int timeout);
-    ~TimerNode();
     
     void update(int timeout);
     bool isValid();
@@ -57,9 +56,6 @@ private:
     std::priority_queue<sptTimerNode, std::deque<sptTimerNode>, TimerCmp> timerNodeQueue;
 
 public:
-    TimerQueue();
-    ~TimerQueue();
-
     void addTimer(std::shared_ptr<TimerNode> node);
     void handleExpiredEvent();
 };
@@ -79,7 +75,6 @@ private:
 public:
     // 指定构造函数或转换函数 (C++11起)为显式, 即它不能用于隐式转换和复制初始化
     explicit TimerManager(EventLoop* _loop);
-    ~TimerManager();
 
     void addTimer(std::shared_ptr<TimerNode> node);
     void handleExpiredEvent();

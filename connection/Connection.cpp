@@ -16,8 +16,6 @@ Connection::Connection(EventLoop *_loop, int _sockfd, sockaddr_in _addr){
     timerNode = nullptr;
 }
 
-Connection::~Connection(){}
-
 Connection::State Connection::getStateConn() const{
     return stateConn;
 }

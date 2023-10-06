@@ -35,9 +35,8 @@ private:
     void writeBlocking();
 
 public:
-    // 初始化及析构函数
+    // 初始化
     Connection(EventLoop *_loop, int _fd, sockaddr_in _addr);
-    ~Connection();
 
     State getStateConn() const;
     void setStateConn(State _state);

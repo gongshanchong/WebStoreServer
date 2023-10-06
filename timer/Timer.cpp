@@ -10,8 +10,6 @@ TimerNode::TimerNode(int _fd, std::string _sockaddr, int timeout){
     expiredTime = (((now.tv_sec % 10000) * 1000) + (now.tv_usec / 1000)) + timeout;
 }
 
-TimerNode::~TimerNode(){}
-
 void TimerNode::update(int timeout){
     struct timeval now;
     gettimeofday(&now, NULL);
@@ -34,10 +32,6 @@ bool TimerNode::isValid(){
 void TimerNode::setTimeoutCallBack(std::function<void(int, std::string)> const &callback){
     timeoutCallBack = std::move(callback);
 }
-
-TimerQueue::TimerQueue(){}
-
-TimerQueue::~TimerQueue(){}
 
 void TimerQueue::addTimer(std::shared_ptr<TimerNode> node){
     timerNodeQueue.push(node);
@@ -85,8 +79,6 @@ TimerManager::TimerManager(EventLoop *_loop){
     channel->enableRead();
     channel->useET();
 }
-
-TimerManager::~TimerManager(){}
 
 void TimerManager::addTimer(std::shared_ptr<TimerNode> node){
     timerQueue->addTimer(node);

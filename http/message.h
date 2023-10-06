@@ -140,9 +140,6 @@ private:
 
 
 public:
-    Response() {}
-    ~Response() {}
-    
     void clear(){
         beforeBodyMsg.clear();
         msgBody.clear();
@@ -582,7 +579,6 @@ private:
 
 public:
     Request(): status(CHECK_STATE_REQUESTLINE), fileMsgStatus(CHECK_STATE_FILE_ZERO){}
-    ~Request() {}
 
     // 主状态机解析报文中的请求行数据
     HTTP_CODE parseRequestLine(const std::string &text, Response &httpResponse){
