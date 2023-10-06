@@ -80,11 +80,4 @@ INSERT INTO user(username, passwd) VALUES('name', 'passwd');
 
 ## 致谢
 
-本项目实现过程中，参考了许多优秀的Github项目：
-
-* TinyWebServer：[https://github.com/qinguoyi/TinyWebServer](https://github.com/qinguoyi/TinyWebServer)
-* WebFileServer：[https://github.com/shangguanyongshi/WebFileServer](https://github.com/shangguanyongshi/WebFileServer)
-* 30dayMakeCppServer：[https://github.com/yuesong-feng/30dayMakeCppServer](https://github.com/yuesong-feng/30dayMakeCppServer)
-* 测试工具：[https://github.com/linyacool/WebBench](https://github.com/linyacool/WebBench)
-
 本人能力一般，项目实现时按照个人的想法实现的，本项目也暂时没有做测试，如果有不足的地方，希望和大家提出，多多交流，感谢！
