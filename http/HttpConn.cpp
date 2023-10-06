@@ -1,4 +1,5 @@
 #include "HttpConn.h"
+#include <cstddef>
 
 HTTP_CODE HttpConn::processRead(std::string &recvMsg){
     // 保存字符串查找结果，每次查找都可以用该变量暂存查找结果

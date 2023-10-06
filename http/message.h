@@ -648,13 +648,17 @@ public:
     HTTP_CODE parseContent(std::string &text, Response &httpResponse){
         // 对这请求消息体进行解析
         // 如果客户端发送的是文件
-        if(msgHeader["Content-Type"] == "multipart/form-data")
+        if(msgHeader["Content-Type"] == "multipart/form-data"){
+            msgHeader.clear();
             return parseFileContent(text, httpResponse);
+        }
         // POST 其他类型的数据，本项目是登录时产生的数据，类型为提交表单，并且依据本项目的html页面来验证该post的请求是否为注册登陆
         // 将用户名和密码提取出来
         // 数据格式：user=123&password=123\r\n(最后的\r\n为程序添加的)
-        else if (msgHeader["Content-Type"] == "application/x-www-form-urlencoded" && rquestResourse.find("CGI") != std::string::npos)
+        else if (msgHeader["Content-Type"] == "application/x-www-form-urlencoded" && rquestResourse.find("CGI") != std::string::npos){
+            msgHeader.clear();
             return parseFormContent(text, httpResponse);
+        }
         // 其他 POST 类型的数据时，直接返回，获取文件列表
         else{
             httpResponse.bodyFileName = "/redirect";

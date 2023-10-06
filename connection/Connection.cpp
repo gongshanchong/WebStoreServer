@@ -62,13 +62,12 @@ Buffer* Connection::getSendBuf(){
 
 void Connection::handleConn(){
     if(timerNode == nullptr){
-        LOG_INFO("http of %s stop because of timeout", (sock->getAddr() + " fd of " + std::to_string(sock->getFd())).c_str());
         return;
     }
     // 此处更新时间
-    // 每次操作后添加15秒
-    timerNode->update(3 * DEFAULT_EXPIRED_TIME);
-    LOG_INFO("%s", ("update timer " + std::to_string(3 * DEFAULT_SENCOND_TIME) + " second before handle\r\n").c_str());
+    // 每次操作后添加10秒
+    timerNode->update(2 * DEFAULT_EXPIRED_TIME);
+    LOG_INFO("%s", ("update timer " + std::to_string(2 * DEFAULT_EXPIRED_TIME) + " second before handle\r\n").c_str());
 
     // 读取数据
     this->readConn();
@@ -83,7 +82,9 @@ void Connection::handleConn(){
 }
 
 void Connection::readConn(){
-    if(stateConn != State::Connected) return;
+    if(stateConn != State::Connected || timerNode == nullptr){
+        return;
+    }
 
     int sockFd = sock->getFd();
     std::string sockAddr = sock->getAddr();
@@ -98,7 +99,9 @@ void Connection::readConn(){
 }
 
 void Connection::writeConn(){
-    if(stateConn != State::Connected) return;
+    if(stateConn != State::Connected || timerNode == nullptr){
+        return;
+    }
 
     int sockFd = sock->getFd();
     int len = sendBuf->size();
