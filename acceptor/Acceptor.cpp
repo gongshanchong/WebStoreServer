@@ -25,13 +25,6 @@ void Acceptor::acceptConnection() const{
 
     sock->accept(clnt_fd, client_address, client_addrlength);
 
-    // 限制服务器的最大并发连接数
-    if (clnt_fd >= MAXFDS) {
-      close(clnt_fd);
-      LOG_ERROR("%s", "Internal server busy");
-      clnt_fd = -1;
-      return;
-    }
     // 默认创建socket都是阻塞模式的
     // 新接受到的连接设置为非阻塞式
     setNonBlocking(clnt_fd); 

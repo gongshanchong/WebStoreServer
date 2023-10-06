@@ -48,6 +48,14 @@ void TcpServer::newConnection(int sockfd, sockaddr_in sockaddr){
     errif(sockfd == -1, "socket connect error");
     errif(subReactors.size() == 0, "thread reactor error");
 
+    // 限制服务器的最大并发连接数
+    if (connections.size() >= MAXFDS) {
+      close(sockfd);
+      LOG_ERROR("%s", "Internal server busy");
+      sockfd = -1;
+      return;
+    }
+
     // 调度策略：全随机
     int random = sockfd % subReactors.size();
     // 分配给一个subReactor

@@ -19,6 +19,9 @@ private:
     const int DEFAULT_EXPIRED_TIME = 5000;              // ms
     const int DEFAULT_KEEP_ALIVE_TIME = 5 * 60 * 1000;  // ms
 
+    // 限制服务器的最大并发连接数
+    static const int MAXFDS = 100000;
+
     // 只负责接受连接，然后分发给一个subReactor
     std::unique_ptr<EventLoop> mainReactor;
     // 连接接受器
