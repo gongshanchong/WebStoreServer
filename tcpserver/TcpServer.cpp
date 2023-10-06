@@ -64,7 +64,7 @@ void TcpServer::newConnection(int sockfd, sockaddr_in sockaddr){
     conn->setDeleteConnectionCallback(cb);
     conn->setOnHandleCallback(onHandleCallback);
 
-    // 生成新的定时器并加入到定时器容器中
+    // 生成新的定时器并加入到定时器容器中，并设置初始超时时间为20秒
     std::shared_ptr<TimerNode> newNode = std::make_shared<TimerNode>(sockfd, conn->getSocket()->getAddr(),4 * DEFAULT_EXPIRED_TIME);
     // 每一个定时器里面放置一个回调函数，用来关闭过期连接
     newNode->setTimeoutCallBack(cb);

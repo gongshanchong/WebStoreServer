@@ -92,9 +92,6 @@ void Connection::readConn(){
     }
     
     LOG_INFO("read data from the client(%s)", (sockAddr + " fd of " + std::to_string(sockFd)).c_str());
-    // 此处依据接收的文件大小更新时间
-    this->getTimerNode()->update((readBuf->size()/1024/100) * DEFAULT_SENCOND_TIME);
-    LOG_INFO("%s", "update timer once\r\n");
 }
 
 void Connection::writeConn(){

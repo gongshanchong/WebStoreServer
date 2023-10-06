@@ -3,6 +3,7 @@
 StoreServer::StoreServer(uint16_t port, const char *ip, std::string _url, std::string _user, std::string _passWord, std::string _databasename, int _port, int _maxConn, std::string _logFileName, int _maxLines){
     // 网络路TCP服务端初始化
     tcpServer = std::make_unique<TcpServer>(port, ip, _logFileName, _maxLines);
+    // 设置业务逻辑
     std::function<void(Connection*, int)> handleCb = std::bind(&StoreServer::handleHttpConn, this, std::placeholders::_1, std::placeholders::_2);
     tcpServer->setOnHandle(handleCb);
 
