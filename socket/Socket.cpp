@@ -43,7 +43,6 @@ void Socket::bind(uint16_t port, const char *ip){
 
 void Socket::listen() const{
     assert(fd != -1);
-
     errif(::listen(fd, SOMAXCONN) == -1, "socket listen error");
 }
 
