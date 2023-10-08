@@ -2,6 +2,10 @@
 #include <iostream>
 
 TcpServer::TcpServer(uint16_t port, const char *ip, std::string _logFileName, int _maxLines): logFileName(_logFileName), maxLines(_maxLines){ 
+    // 初始化日志，文件名（最后/前的为目录路径，最后/后的为文件名）
+    // "./serverLog/serverLog", 5000000
+    Log::getInstance()->init(logFileName.c_str(), maxLines);
+    
     // Acceptor、定时器容器由且只由mainReactor负责
     // 使用one loop per thread模式
     mainReactor = std::make_unique<EventLoop>();
@@ -22,10 +26,6 @@ TcpServer::TcpServer(uint16_t port, const char *ip, std::string _logFileName, in
         std::unique_ptr<EventLoop> sub_reactor = std::make_unique<EventLoop>();
         subReactors.push_back(std::move(sub_reactor));
     }
-
-    // 初始化日志，文件名（最后/前的为目录路径，最后/后的为文件名）
-    // "./serverLog/serverLog", 5000000
-    Log::getInstance()->init(logFileName.c_str(), maxLines);
 }
 
 TcpServer::~TcpServer(){}

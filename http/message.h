@@ -141,8 +141,12 @@ private:
 
 public:
     void clear(){
-        beforeBodyMsg.clear();
-        msgBody.clear();
+        if(!beforeBodyMsg.empty()){
+            beforeBodyMsg.clear();
+        }
+        if(!msgBody.empty()){
+            msgBody.clear();
+        }
     }
 
     // 添加状态行：http/1.1 状态码 状态消息

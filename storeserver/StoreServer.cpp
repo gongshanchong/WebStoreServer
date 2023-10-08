@@ -1,14 +1,15 @@
 #include "StoreServer.h"
 
 StoreServer::StoreServer(uint16_t port, const char *ip, std::string _url, std::string _user, std::string _passWord, std::string _databasename, int _port, int _maxConn, std::string _logFileName, int _maxLines){
+    // 初始化http中要使用的数据库，数据库连接池(单例模式)
+    MysqlConnPool::getInstance()->init(_url, _user, _passWord, _databasename, _port, _maxConn);
+    
     // 网络路TCP服务端初始化
     tcpServer = std::make_unique<TcpServer>(port, ip, _logFileName, _maxLines);
+    
     // 设置业务逻辑
     std::function<void(Connection*, int)> handleCb = std::bind(&StoreServer::handleHttpConn, this, std::placeholders::_1, std::placeholders::_2);
     tcpServer->setOnHandle(handleCb);
-
-    // 初始化http中要使用的数据库，数据库连接池(单例模式)
-    MysqlConnPool::getInstance()->init(_url, _user, _passWord, _databasename, _port, _maxConn);
 }
 
 // 自定义业务逻辑，设置回调函数

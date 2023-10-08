@@ -117,8 +117,10 @@ void Log::writeLog(int level, const char *format, ...)
         {
             
             char new_log_full_name[256] = {0};
-            fflush(logFp);
-            fclose(logFp);
+            if(logFp != NULL){
+                fflush(logFp);
+                fclose(logFp);
+            }
             char tail[16] = {0};
         
             // 格式化日志名中的时间部分
