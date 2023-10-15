@@ -7,7 +7,7 @@
 #include "../socket/Socket.h"
 #include "../acceptor/Acceptor.h"
 #include "../connection/Connection.h"
-#include "../CGImysql/MysqlConnPool.h"
+#include "../mysqlconnpool/MysqlConnPool.h"
 #include "../threadpool/ThreadPool.h"
 #include "../eventloop/EventLoop.h"
 #include "../utils/utils.h"

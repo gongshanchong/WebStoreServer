@@ -24,7 +24,7 @@
 #include <sys/sendfile.h>
 #include <unistd.h>
 #include <cstdio>
-#include "../CGImysql/MysqlConnPool.h"
+#include "../mysqlconnpool/MysqlConnPool.h"
 
 // 文件路径
 const std::string fileRoot = "./root";
