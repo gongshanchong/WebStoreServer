@@ -55,6 +55,7 @@ class MysqlConn{
 public:
 	//双指针对MYSQL *con修改
 	MysqlConn(MYSQL **conn, MysqlConnPool *connPool);
+	// RALL机制
 	~MysqlConn();
 	
 private:
