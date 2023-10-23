@@ -572,7 +572,7 @@ private:
                     httpResponse.bodyFileName =  "/registerError";
             }
         }
-
+        
         return GET_REQUEST;
     }
 

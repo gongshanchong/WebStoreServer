@@ -5,9 +5,14 @@ Acceptor::Acceptor(EventLoop* _loop, uint16_t port, const char *ip){
     // acceptor使用阻塞式IO比较好
     // Acceptor使用LT模式，建立好连接后处理事件的fd读写用ET模式
     sock->Create();
+    // 绑定地址快速重用
+    int val = 1;
+    if (setsockopt(sock->getFd(), SOL_SOCKET, SO_REUSEADDR, &val, sizeof(val)) != 0) {
+        LOG_ERROR("setsockopt REUSEADDR error, errno=%d, error=%s", errno, strerror(errno));
+    }
     sock->bind(port, ip);
     sock->listen();
-    
+
     channel = std::make_unique<Channel>(_loop, sock->getFd());
     std::function<void()> cb = std::bind(&Acceptor::acceptConnection, this);
     
