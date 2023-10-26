@@ -81,3 +81,5 @@ INSERT INTO user(username, passwd) VALUES('name', 'passwd');
 ## 致谢
 
 本人能力一般，项目实现时按照个人的想法实现的，本项目也暂时没有做测试，如果有不足的地方，希望和大家提出，多多交流，感谢！
+
+参考：[qinguoyi/TinyWebServer: 🔥 Linux下C++轻量级WebServer服务器 (github.com)](https://github.com/qinguoyi/TinyWebServer)
