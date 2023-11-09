@@ -40,10 +40,15 @@ void TimerQueue::addTimer(std::shared_ptr<TimerNode> node){
 }
 
 void TimerQueue::handleExpiredEvent(){
+    // 更新优先队列的顺序
+    timerNodeQueue.push(std::make_shared<TimerNode>(-1, "", -4 * DEFAULT_EXPIRED_TIME));
     while (!timerNodeQueue.empty()) {
         sptTimerNode ptimerNow = timerNodeQueue.top();
 
-        if ((ptimerNow->getDeleted() == true) || (ptimerNow->isValid() == false)){
+        if(ptimerNow->getFd() == -1){
+            timerNodeQueue.pop();
+        }
+        else if ((ptimerNow->getDeleted() == true) || (ptimerNow->isValid() == false)){
             ptimerNow->timeoutCallBack(ptimerNow->getFd(), ptimerNow->getAddr());
             timerNodeQueue.pop();
         }
